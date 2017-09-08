@@ -1,0 +1,17 @@
+6/30/2016
+
+1. Fixed primary button :focus class (all color .css files)
+2. Changed count section to only run count once (all html files, JS section)
+3. Mobile fixed navigation (navigation portion of CSS)
+4. Updated coming soon page (coming-soon.html)
+
+6/6/2016
+
+1. Updated dropdown links (all html files)
+2. Gear in setting changed to icon 7 stroke (all html files)
+3. Social icons colors fixed in footer options (color files)
+4. Navigation link click backgrround fixed (style-switcher.css)
+5. Updated contact form hover, active, and focus (contact portion of style.css).
+6. Count section updated to use jQuery Inview instead of Waypoints (Javascript section of all files)
+7. Map updated to use Google API instead of Mapbuildr
+8. Contact bug fix

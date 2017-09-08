@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Particles Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Denis Samardjiev">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+    
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container"> 
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+	<a class="brand" href="#">Particles Documentation</a> <!-- TIP: Change this for the name of your file -->
+     	<div class="nav-collapse">
+        <ul class="nav">
+              <li><a href="#top" class="active">Top</a></li>
+              <li><a href="#markup">Markup</a></li>
+              <li><a href="#styles">Styles</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+              <li><a href="#php">PHP</a></li>
+              <li><a href="#credits">Credits</a></li>
+          </ul>
+</div>
+	</div>
+		</div>
+			</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container">
+    
+	<div class="masthead">
+	    <h1>Particles - Personal + Agency Template</h1>
+	    <p class="marketing-byline">A template crafted by Denis Samardjiev</p>
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Thank you for purchasing. If you have any questions beyond the scope of this help file open a ticket at <b>www.dimitrovinc.freshdesk.com</b></p>
+  </div> <!-- intro -->
+      
+<section id="markup">
+	<div class="page-header">
+	  <h1>Markup <small>Markup customization and highlights</small></h1>
+	</div>
+	
+    <div class="alert alert-info"> <a class="close" data-dismiss="alert">×</a> <strong>Remember!</strong> The features / plugins in this template are explained on the githubs/websites in more detail, they are linked below.</div>
+
+    <hr />
+
+    <div class="row">
+      <div class="span3">
+        <h3>General Markup</h3>
+        <p>The general template structure is the same throughout the template.</p>
+        <ol>
+          <li>Choose a main color (inside css/colors folder) and include it regularly AFTER the main "style.css" file</li><br>
+          <li>If you are using the light version, include the css file "base-light.css" regularly AFTER the main "style.css" file.</li><br>
+          <li>Each section must have a ".background1" or ".background2" class.</li><br>
+          <li>Remove the rest of the style switcher code before production, HTML and CSS files.</li>
+        </ol>
+        <p>Sections can be reorganized how you need, remember to change the background color.</p>
+      </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;!-- Meta Info --&gt;
+  &lt;!-- Royal Preloader CSS --&gt;
+  &lt;!-- jQuery --&gt;
+  &lt;!-- Parallax JS --&gt;
+  &lt;!-- Royal Preloader JS / Config --&gt;
+  &lt;!-- Main CSS --&gt;
+  &lt;!-- Style Switcher --&gt;
+  &lt;!-- Main Color / Base CSS --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Royal Preloader --&gt;
+  &lt;!-- Style Switcher --&gt;
+  &lt;!-- Header (brand and navigation) --&gt;
+  &lt;!-- Jumbotron (Varies depending on index page) --&gt;
+  &lt;!-- Intro --&gt;
+  &lt;!-- Services --&gt;
+  &lt;!-- About --&gt;
+  &lt;!-- Our Count --&gt;
+  &lt;!-- Profile --&gt;
+  &lt;!-- Work --&gt;
+  &lt;!-- Timeline --&gt;
+  &lt;!-- Team --&gt;
+  &lt;!-- Pricing --&gt;
+  &lt;!-- Contact + Map --&gt;
+  &lt;!-- Footer --&gt;
+  &lt;!-- JS Files --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Navigation</h3>
+  <p>The navigation is very easy to customize, a link must have an "href" and "data-id" matching a section with the same ID on the page. As well as the class ".scroll-link"</p>
+  <p>A dropdown in structured simply as well:</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+&lt;li&gt;&lt;a href="#home" data-id="home" class="scroll-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+
+&lt;li class="dropdown"&gt;
+  &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;&lt;span class="glyphicon glyphicon-menu-down"&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="components.html"&gt;Components&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="pricing-options.html"&gt;Pricing Options&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="team-options.html"&gt;Team Options&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Purchase&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/li&gt;
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Animations</h3>
+  <p>The animations on the page are easy to reuse anywhere by simply applying the animation you want as a class (.rightReveal for example) on the element you want to animate. It uses scrollReveal.js.</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint js linenums">
+/* ---- animations ---- */
+if (typeof sr == 'undefined') {
+    window.sr = ScrollReveal({
+        duration: 1500,
+        delay: 50
+    });
+}
+Royal_Preloader.config({
+    onComplete: function () {
+        triggerReveals();
+    }
+});
+function triggerReveals() {
+    sr.reveal('.bottomReveal', {
+        origin: 'bottom'
+    }).reveal('.leftReveal', {
+        origin: 'left'
+    }).reveal('.rightReveal', {
+        origin: 'right'
+    }).reveal('.topReveal', {
+        origin: 'top'
+    });
+
+    sr.reveal('.rotateBottomReveal', {
+        origin: 'bottom',
+        rotate: { x: 90 }
+    }).reveal('.rotateLeftReveal', {
+        origin: 'left',
+        rotate: { x: 90 }
+    }).reveal('.rotateRightReveal', {
+        origin: 'right',
+        rotate: { x: 90 }
+    }).reveal('.rotateTopReveal', {
+        origin: 'top',
+        rotate: { x: 90 }
+    })
+
+    sr.reveal('.scaleReveal', {
+        origin: 'top',
+        scale: 0.6
+    });
+}
+</pre>
+      </div>
+        </div>
+
+</section> <!-- Markup -->
+      
+
+<section id="styles">
+    <div class="page-header">
+       <h1>Styles <small>Styles customization and highlights</small></h1>
+     </div>
+<div class="row">
+    <div class="span3">
+  <h3>Stylesheets</h3>
+  <p>Here's a list of the stylesheet files I'm using with this template. Not listed here are the colors CSS files and the full/boxed width CSS files. You can find more information opening each file or visiting the links:</p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td><code>bootstrap.min.css</code></td>
+                <td>Bootstrap main CSS file.</td>
+              </tr>
+              <tr>
+                <td><code>style.css</code></td>
+                <td>Main theme CSS file.</td>
+              </tr>
+              <tr>
+                <td><code>base-light.css</code></td>
+                <td>Light color base CSS file.</td>
+              </tr>
+              <tr>
+                <td><code>logoiconfont.css</code></td>
+                <td>Particles icon font CSS file.</td>
+              </tr>
+              <tr>
+                <td><code>style-switcher.css</code></td>
+                <td>Style switcher CSS file.</td>
+              </tr>
+              <tr>
+                <td><code>magnific-popup.css</code></td>
+                <td>Popup video, image, and gallery used in work section. <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html" target="_blank">Docs</a></td>
+              </tr>
+              <tr>
+                <td><code>ionicons.min.css</code></td>
+                <td>Ionicons icon fonts CSS file <a href="http://ionicons.com/" target="_blank">Docs</a></td>
+              </tr>
+              <tr>
+                <td><code>pe-icon-7-stroke.css</code></td>
+                <td>Icon 7 Stroke <a href="http://themes-pixeden.com/font-demos/7-stroke/" target="_blank">Docs</a></td>
+              </tr>
+              <tr>
+                <td><code>royal_preloader.css</code></td>
+                <td>Preloader CSS file.</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+        </div>
+    <hr />
+    <div class="row">
+	<div class="span3">
+	   <h3>CSS Structure</h3>
+	   <p>Style.css contains all of the specific stylings for the template, the table of contents is listed to the right. If you are editing styles 99% of changes will be done here.</p>
+	</div>
+
+<div class="span9">	
+<pre class="prettyprint linenums">
+/* =Table of Contents
+--------------------------------------------------------------
+  =Common Styles
+  =Margin + Padding
+  =Typography
+  =Buttons
+  =Progress Bars
+  =Alerts
+  =Lists
+  =Tabs
+  =Panels
+  =Thumbnails
+  =Animate Examples
+  =Accordion
+  =Call to Action
+  =Navigation
+  =Jumbotron Main
+  =Jumbotron Register
+  =Hello Intro
+  =Our Process
+  =Carousel
+  =Services
+  =About
+  =Profile
+  =Count
+  =Team
+  =Work
+  =Pricing
+  =Timeline
+  =Contact + Map
+  =Footer
+  =Media Queries
+*/
+
+/* =Section
+-------------------------------------------------------------- */
+
+/* =Section
+-------------------------------------------------------------- */
+					</pre>
+      </div>
+        </div>
+  </section>
+      <!-- Styles -->
+      
+      <section id="javascript">
+	<div class="page-header">
+	  <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+	</div>
+	<div class="row">
+	  <div class="span3">
+	    <h3>Particles.js code</h3>
+	    <p>Particles.js is a great lightweight library for creating particles, it is used in any file using said particles. it is also very easy to use. Load particles.js and configure the particles inside particlesRun.js:</p>
+	  </div>
+	  <div class="span9">
+<pre class="prettyprint js linenums:103">
+&lt;div id="particles-js"&gt;&lt;/div&gt;
+</pre>
+<pre class="prettyprint js linenums:103">
+/* ---- particles.js config ---- */
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+</pre>
+	  </div>
+	</div>
+  <hr />
+  <div class="row">
+  <div class="span3">
+    <h3>Magnific Popup Lightbox</h3>
+    <p>This is the js activating our image, video, and gallery zoom. Simply add the corresponding class to your <code>a</code> tag and the link to your image or video as the href. It works the same way for videos, maps, and galleries as well.</p>
+  </div>
+<div class="span9">
+<pre class="prettyprint js linenums:103">
+/* ---- our work gallery ---- */
+$('#work').magnificPopup({
+    delegate: 'a.zoom',
+    type: 'image',
+    fixedContentPos: false,
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
+    gallery: {
+        enabled: true,
+        preload: [0,2]
+    }
+});
+
+/* ---- popup image ---- */
+$('.popup-img').magnificPopup({
+    type: 'image',
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
+});
+
+/* ---- popup video ---- */
+$(document).ready(function() {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+});
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+  <div class="row">
+  <div class="span3">
+    <h3>Mixitup.js portfolio code</h3>
+    <p>This is the js activating our portfolio sorting. Your portfolio wrapper must contain the id "#thework" or whatever you adjust it to.</p>
+  </div>
+<div class="span9">
+<pre class="prettyprint js linenums:103">
+/* ---- mixitup.js our work sorting ---- */
+$('#thework').mixItUp({
+    animation: {
+    duration: 1000
+    }
+});
+</pre>
+      </div>
+        </div>
+
+    <hr />
+
+  <div class="row">
+  <div class="span3">
+    <h3>Parallax.js code</h3>
+    <p>To easily add a parallax effect behind an element, add data-parallax="scroll" to the element you want to use, and specify an image with data-image-src="/path/to/image.jpg".</p>
+  </div>
+<div class="span9">
+<pre class="prettyprint js linenums:103">
+&lt;div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"&gt;&lt;/div&gt;
+</pre>
+      </div>
+
+        </div>
+            <div class="alert alert-info" style="margin-top:50px;"> <a class="close" data-dismiss="alert">×</a> <strong>Notice:</strong> The remaining JS inside main.js is required for full functionality but does not need any customization. Everything in this theme works out the box.</div>
+  </section><!-- JavaScript -->
+
+  <section id="php">
+    <div class="page-header">
+      <h1>PHP Files <small>Explaining the contact page.</small></h1>
+    </div>
+  <div class="row">
+  <div class="span3">
+    <h3>Contact.php change</h3>
+    <p>In order for the form to function you must change the following code, inside contact.php to your email address.</p>
+  </div>
+<div class="span9">
+<pre class="prettyprint js linenums:103">
+$EmailTo = "youremail@yoursite.com";
+</pre>
+      </div>
+        </div>
+
+  </section><!-- Credits -->
+
+	<section id="credits">
+	  <div class="page-header">
+	    <h1>Credits Files</h1>
+	  </div>
+	  <p>I've used the following images, icons or other files as listed.</p>
+	  <h3>JavaScript</h3>
+	  <ol>
+          <li><a href="https://jquery.com/" target="_blank">jquery.min.js</a> <small>&mdash; jQuery is a Javascript library, version 2.1.3 is used in this theme.</small></li>
+          <li><a href="http://getbootstrap.com/" target="_blank">bootstrap.min.js</a> <small>&mdash; The bootstrap main JS file.</small></li>
+          <li><a href="https://mixitup.kunkalabs.com/" target="_blank">jquery.mixitup.min.js</a> <small>&mdash; JS used for portfolio sorting and transitions.</small></li>
+          <li><a href="http://scrollrevealjs.org/" target="_blank">scrollReveal.js</a> <small>&mdash; Script used to activate animations when in viewport.</small></li>
+          <li><a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">jquery.magnific-popup.min.js</a> <small>&mdash; Lightbox script used to open imgs + video on any link.</small></li>
+          <li><a href="https://github.com/VincentGarreau/particles.js/" target="_blank">particles.js</a> <small>&mdash; A lightweight JavaScript library for creating particles.</small></li>
+          <li><a href="https://github.com/1000hz/bootstrap-validator" target="_blank">form-validator.js</a> <small>&mdash; The form validator used in the contact form.</small></li>
+          <li><a href="http://hilios.github.io/jQuery.countdown/" target="_blank">jquery.countdown.min</a> <small>&mdash; Countdown JS used in coming soon page.</small></li>
+          <li><a href="https://github.com/mhuggins/jquery-countTo" target="_blank">jquery.countTo.js</a> <small>&mdash; Count to JS used in our count section.</small></li>
+          <li><a href="https://github.com/protonet/jquery.inview" target="_blank">jquery.inview.min.js</a> <small>&mdash; Event that is fired as soon as an element appears in the user's viewport.</small></li>
+          <li><a href="https://github.com/pixelcog/parallax.js/" target="_blank">parallax.min.js</a> <small>&mdash; Used for parallax accross the theme.</small></li>
+	  </ol>
+	  <h3>CSS</h3>
+	  <ol>
+      <li><a href="http://themes-pixeden.com/font-demos/7-stroke/" target="_blank">pe-icon-7-stroke.css</a> <small>&mdash; Icon 7 Stroke icon fonts.</small> </li>
+      <li><a href="http://ionicons.com" target="_blank">ionicons.min.css</a> <small>&mdash; Ionicons icon fonts CSS file</small> </li>
+	  </ol>
+	  <h3>Images</h3>
+	  <ol>
+	    <li><a href="http://shutterstock.com">Shutterstock</a> <small>&mdash; Images used in this template.</small></li>
+	  </ol>
+	</section><!-- Credits -->
+
+      <hr />
+
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on Wrapbootstrap or any of the plugins used, you might consider visiting the Stackoverflow or the Github page of the plugin and asking your question.</p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; Denis Samardjiev 2016</p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>

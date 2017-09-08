@@ -1,0 +1,2 @@
+== Simple bitcoin exchange project with Rails
+
