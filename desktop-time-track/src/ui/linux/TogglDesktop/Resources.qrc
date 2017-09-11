@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/logo.png</file>
+        <file>images/icon-billable.png</file>
+        <file>images/icon-tags.png</file>
+        <file>images/continue.svg</file>
+        <file>icons/16x16/toggldesktop.png</file>
+        <file>icons/24x24/toggldesktop.png</file>
+        <file>icons/32x32/toggldesktop.png</file>
+        <file>icons/48x48/toggldesktop.png</file>
+        <file>icons/64x64/toggldesktop.png</file>
+        <file>icons/96x96/toggldesktop.png</file>
+        <file>icons/128x128/toggldesktop.png</file>
+        <file>icons/256x256/toggldesktop.png</file>
+        <file>icons/1024x1024/toggldesktop.png</file>
+        <file>fonts/RobotoTTF/Roboto-Black.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-BlackItalic.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-Bold.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-BoldItalic.ttf</file>
+        <file>fonts/RobotoTTF/RobotoCondensed-Bold.ttf</file>
+        <file>fonts/RobotoTTF/RobotoCondensed-BoldItalic.ttf</file>
+        <file>fonts/RobotoTTF/RobotoCondensed-Italic.ttf</file>
+        <file>fonts/RobotoTTF/RobotoCondensed-Light.ttf</file>
+        <file>fonts/RobotoTTF/RobotoCondensed-LightItalic.ttf</file>
+        <file>fonts/RobotoTTF/RobotoCondensed-Regular.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-Italic.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-Light.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-LightItalic.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-Medium.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-MediumItalic.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-Regular.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-Thin.ttf</file>
+        <file>fonts/RobotoTTF/Roboto-ThinItalic.ttf</file>
+        <file>icons/1024x1024/toggldesktop_gray.png</file>
+        <file>images/toggl-white-icon.png</file>
+        <file>images/continue_regular.svg</file>
+        <file>images/continue_light.svg</file>
+        <file>images/group_icon_closed.svg</file>
+        <file>images/group_icon_open.svg</file>
+        <file>../../windows/TogglDesktop/TogglDesktop/Resources/warning-icon.png</file>
+    </qresource>
+</RCC>

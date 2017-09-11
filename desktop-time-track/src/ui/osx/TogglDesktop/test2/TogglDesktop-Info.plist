@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>TogglDesktop</string>
+	<key>CFBundleIconFile</key>
+	<string>app_inactive</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.toggl.toggldesktop.TogglDesktop</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>TogglDesktop</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>7.0.0</string>
+	<key>CFBundleSignature</key>
+	<string>td70</string>
+	<key>CFBundleVersion</key>
+	<string>7.0.0</string>
+	<key>KopsikCheckForUpdates</key>
+	<false/>
+	<key>KopsikEnvironment</key>
+	<string>development</string>
+	<key>KopsikLogUserInterfaceToFile</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.8</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 Toggl Desktop developers. All rights reserved.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://assets.toggl.com/installers/darwin_stable_appcast.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUShowReleaseNotes</key>
+	<false/>
+</dict>
+</plist>
